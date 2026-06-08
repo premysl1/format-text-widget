@@ -9,7 +9,7 @@ const content = document.getElementById(`content`);
 const main = document.querySelector(`main`);
 
 let textSettingsExpanded = false;
-textSettings.addEventListener(`pointerdown`, () =>
+textSettings.addEventListener(`click`, () =>
     {
         if (!textSettingsExpanded) {
             textSettingsExpanded = true;
@@ -31,7 +31,7 @@ textSettings.addEventListener(`pointerdown`, () =>
     }
 );
 
-textSettings.dispatchEvent(new Event(`pointerdown`));
+textSettings.dispatchEvent(new Event(`click`));
 
 textPositionSlider.addEventListener(`input`, e =>
     {
@@ -59,7 +59,7 @@ textWidthSlider.addEventListener(`input`, e =>
 const startingFontSize = parseFloat(window.getComputedStyle(main).fontSize);
 let currentFontSize;
 
-fontSizeIncrease.addEventListener(`pointerdown`, () =>
+fontSizeIncrease.addEventListener(`click`, () =>
     {
         currentFontSize = parseFloat(window.getComputedStyle(main).fontSize);
         if (currentFontSize >= (startingFontSize * 4)) {
@@ -69,7 +69,7 @@ fontSizeIncrease.addEventListener(`pointerdown`, () =>
     }
 );
 
-fontSizeDecrease.addEventListener(`pointerdown`, () =>
+fontSizeDecrease.addEventListener(`click`, () =>
     {
         currentFontSize = parseFloat(window.getComputedStyle(main).fontSize);
         if (currentFontSize <= (startingFontSize * 0.25)) {
