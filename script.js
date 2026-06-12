@@ -24,7 +24,7 @@ const content = document.getElementById(`content`);
 
 textPositionSlider.addEventListener(`input`, e =>
 {
-    const value = Number(e.target.value);
+    const value = e.target.value;
 
     const max = 100;
     const t = (value - 1) / (max - 1);
