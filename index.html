@@ -4,43 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive text widget demonstration</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./boilerplate.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="page-settings-widget" class="flex-staircase">
-        <div class="flex-staircase">
-            <div class="flex-staircase">
-                <div class="flex-staircase">
-                    <button id="text-settings">
-                        <img src="icons/custom_typography_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
-                    </button>
-                    <div id="text-settings-slider-1" class="text-settings-slider">
-                        <label>Text Position:</label>
-                        <input id="text-position-slider" type="range" min="0" max="100" step="5">    
-                    </div>
-                </div>
-                <div id="text-settings-slider-2" class="text-settings-slider">
+    <div id="separator">
+        <div id="text-settings-widget">
+            <button aria-pressed="false">
+                <img src="icons/custom_typography_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+            </button>
+            <menu>
+                <li class="text-settings-slider">
+                    <label>Text Position:</label>
+                    <input id="text-position-slider" type="range" min="0" max="100" step="5">    
+                </li>
+                <li class="text-settings-slider">
                     <label>Text Width:</label>
                     <input id="text-width-slider" type="range" min="20" max="100" step="5">
-                </div>
-            </div>
-            <div id="change-font-size">
-                <button id="font-size-increase">
-                    <img src="icons/text_increase_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
-                </button>
-                <button id="font-size-decrease">
-                    <img src="icons/text_decrease_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
-                </button>
-            </div>
+                </li>
+                <li>
+                    <button id="font-size-increase">
+                        <img src="icons/text_increase_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    </button>
+                </li>
+                <li>
+                    <button id="font-size-decrease">
+                        <img src="icons/text_decrease_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                    </button>
+                </li>
+            </menu>
         </div>
     </div>
     <div id="content">
         <main>
             <div>
-                <h1>Please test the button in the top right corner</h1>
-                <p>What you see is a fully responsive widget, working with any screen size.
-                <p>Each of the elements in the expanded dropdown, will wrap to a new independent line if flex wrapping is triggered.</p>
-                <p>The text can be: Moved across the width of the page, horizontally resized or changed to a different font size.</p>
+                <h1>Please test the button in the top-right corner</h1>
+                <p>What you see is a fully responsive widget.</p>
+                <p>Text can be moved across the width of the page, resized horizontally, or displayed at a different font size.</p>
                 <p>This can be used for blog websites, or text content on the web in general.</p>
             </div>
             <h2>Lorem ipsum</h2>
@@ -57,6 +57,6 @@
             <p>Velit distinctio iure neque sit! Iste nulla unde odit sapiente id delectus adipisci natus necessitatibus reiciendis autem vitae, molestiae minima beatae consectetur sed ipsum voluptatum et? Voluptatum aliquid facilis tempore aut praesentium ea deleniti veritatis modi. Exercitationem officia rem deleniti tenetur eum quibusdam, eius pariatur veniam perferendis repellendus, totam ipsa voluptatibus excepturi. Odio aliquid eaque nam consequuntur magni nisi magnam in obcaecati officiis culpa!</p>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
